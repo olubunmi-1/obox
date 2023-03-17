@@ -1,0 +1,100 @@
+#watermark { position: fixed; bottom: 0; right: 0; z-index:999; }
+.watermark { position: relative; }
+.watermark::after { position: absolute; bottom: 0; right: 0; content: "COPYRIGHT";
+color: red;
+} 
+.wrap {
+max-width: 12800px;
+margin: auto;
+overflow: hidden;
+border-spacing: 10px;
+position:relative;
+display: flex;
+}
+.col1,
+.col2 {
+padding: 10px;
+text-align: justify;
+width: calc(50% + 220px);
+}
+p {
+padding: 5px:
+margin: 0 0 1em;
+}
+.coli: before,
+{
+float: right;
+width:  1px;
+height: 90px:
+content: "";
+}
+.img {
+float: right;
+clear: right;
+margin: 20px 0 20px 20ps;
+border-radius: 50%;
+border: 10px solid #ffffff;
+shape-outside: circle(50%);
+} .col1 .inner{
+margin-right: 220px;
+}
+@media screen and (max-width: 800px) {
+.wrap {
+display: block;
+}
+.col1,
+.col1 .inner, {
+width: auto;
+margin: 0;
+}
+.img {
+width: 50%;
+height: auto;
+min-width: 100px
+}
+}
+.content {
+    background-color: yellow;    
+}
+
+.row {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-box-orient: horizontal; 
+    -moz-box-orient: horizontal;
+    box-orient: horizontal;
+    flex-direction: row;
+
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+     justify-content: center;
+
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;  
+    align-items: center;
+
+    background-color: red;
+
+}
+
+.cell {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto; 
+
+    padding: 10px;
+    margin: 10px;
+
+    background-color: green;
+    border: 1px solid red;
+    text-align: center;
+
+}
